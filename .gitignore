@@ -1,0 +1,44 @@
+
+# =====================================
+# SISTEMA - Git Ignore
+# =====================================
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Variables de entorno y secretos
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Compilaciones del frontend
+dist/
+build/
+coverage/
+
+# Archivos del editor
+.vscode/
+.idea/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.log
+*.tmp

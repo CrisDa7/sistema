@@ -1,44 +1,114 @@
-
-# =====================================
-# SISTEMA - Git Ignore
-# =====================================
-
-# Python
-__pycache__/
-*.py[cod]
-*.egg-info/
-.pytest_cache/
-.ruff_cache/
-.mypy_cache/
+# Variables de entorno con secretos
+.env
+.env.local
+.env.*.local
 
 # Entornos virtuales
 .venv/
 venv/
 env/
+ENV/
+env.bak/
+venv.bak/
 
-# Variables de entorno y secretos
-.env
-.env.*
-!.env.example
-!.env.*.example
+# Bytecode Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
 
-# Node.js
-node_modules/
-npm-debug.log*
+# Caché de pytest
+.pytest_cache/
+.coverage
+htmlcov/
 
-# Compilaciones del frontend
-dist/
-build/
-coverage/
+# Mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
 
-# Archivos del editor
+# IDEs y editores
 .vscode/
 .idea/
-
-# Sistema operativo
+*.swp
+*.swo
+*~
 .DS_Store
 Thumbs.db
 
-# Archivos temporales
+# Logs
 *.log
+logs/
+
+# Backups de base de datos
+*.sql
+*.dump
+*.bak
+*.backup
+
+# Archivos temporales
+tmp/
+temp/
 *.tmp
+
+# Distribución / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/

@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-black: #000000;
+  --color-sidebar: #050505;
+  --color-card: #111111;
+  --color-surface: #191919;
+  --color-border: #272727;
+  --color-red: #E50914;
+  --color-text: #FFFFFF;
+  --color-text-secondary: #A1A1AA;
+}
+
+@layer base {
+  body {
+    @apply bg-black text-white antialiased;
+  }
+}
